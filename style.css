@@ -1,0 +1,247 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: #f5f7ff;
+    line-height: 1.7;
+}
+
+header {
+    background: #10172b;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #9c7bff;
+}
+
+
+.menu a {
+    color: #e0e5f5;
+    text-decoration: none;
+}
+
+
+
+.hero {
+    min-height: 480px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    background: linear-gradient(135deg, #151d3b, #24164b);
+}
+
+
+
+.destaque {
+    color: #a991ff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+h1 {
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.hero-content > p:not(.destaque) {
+    color: #d2d8ed;
+    margin-bottom: 28px;
+}
+
+.botao {
+    display: inline-block;
+    background: #8b65f6;
+    color: white;
+    padding: 13px 22px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: #7048df;
+}
+
+
+
+.hero-card span {
+    font-size: 45px;
+}
+
+.hero-card h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.barras {
+    height: 90px;
+    display: flex;
+    align-items: end;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.barras i {
+    flex: 1;
+    background: #8b65f6;
+    border-radius: 5px 5px 0 0;
+}
+
+.barras i:nth-child(1) { height: 30%; }
+.barras i:nth-child(2) { height: 50%; }
+.barras i:nth-child(3) { height: 40%; }
+.barras i:nth-child(4) { height: 75%; }
+.barras i:nth-child(5) { height: 100%; }
+
+.secao {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.secao > p:not(.destaque) {
+    max-width: 800px;
+    margin: 15px auto;
+    color: #c7cee3;
+}
+
+.fundo {
+    background: #11182c;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.card {
+    background: #1b2540;
+    border: 1px solid #34405f;
+    padding: 28px;
+    border-radius: 14px;
+    text-align: left;
+}
+
+.card span {
+    font-size: 38px;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+}
+
+.card p {
+    color: #c7cee3;
+}
+
+.vantagens {
+    max-width: 700px;
+    margin: 25px auto;
+    text-align: left;
+}
+
+.vantagens p {
+    padding: 12px;
+    border-bottom: 1px solid #303a56;
+}
+
+.aviso {
+    font-size: 14px;
+}
+
+.chamada {
+    padding: 60px 8%;
+    text-align: center;
+    background: linear-gradient(120deg, #292052, #15304b);
+}
+
+.chamada p {
+    margin-bottom: 24px;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    color: #b9c1d8;
+    background: #080c17;
+}
+
+@media (max-width: 750px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 6%;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .secao {
+        padding: 50px 6%;
+    }
+}
+
+.hero-card img {
+    width: 120%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin-bottom: 15px;
+}
